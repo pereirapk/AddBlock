@@ -1,0 +1,6 @@
+<?php
+
+$storeLanguage =  $block->storeLanguage();
+$baseUrl =  $block->getUrl('*/*/*', ['_current' => true, '_use_rewrite' => true]);
+?>
+<link rel="alternate" hreflang="<?=$storeLanguage?>" href="<?=$baseUrl?>"/>
